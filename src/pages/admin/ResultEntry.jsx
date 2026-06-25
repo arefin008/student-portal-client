@@ -132,7 +132,7 @@ export default function ResultEntry() {
               disabled={loading}
               className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-semibold text-sm transition-colors"
             >
-              {loading ? "Saving…" : "✓ Save Result"}
+              {loading ? "Saving…" : "Submit Result"}
             </button>
           </form>
         </div>

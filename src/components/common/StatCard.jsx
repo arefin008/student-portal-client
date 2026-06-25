@@ -8,7 +8,7 @@ export default function StatCard({
   return (
     <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex items-center gap-5 hover:shadow-md transition-shadow duration-200">
       <div
-        className={`w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 ${iconBg}`}
+        className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${iconBg}`}
       >
         <Icon className={`w-7 h-7 ${iconColor}`} />
       </div>
