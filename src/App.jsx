@@ -10,6 +10,7 @@ import Classes from "./pages/admin/Classes";
 import Subjects from "./pages/admin/Subjects";
 import ResultEntry from "./pages/admin/ResultEntry";
 import MyResult from "./pages/student/MyResult";
+import Profile from "./pages/student/Profile";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
               <Route path="/admin/results" element={<ResultEntry />} />
             </Route>
             <Route path="/student/result" element={<MyResult />} />
+            <Route path="/student/profile" element={<Profile />} />
           </Route>
         </Route>
       </Routes>

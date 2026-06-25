@@ -105,6 +105,7 @@ import {
   BarChart3,
   LogOut,
   GraduationCap,
+  UserCircle,
 } from "lucide-react";
 
 const adminLinks = [
@@ -116,6 +117,7 @@ const adminLinks = [
 ];
 
 const studentLinks = [
+  { to: "/student/profile", icon: UserCircle, label: "My Profile" },
   { to: "/student/result", icon: BarChart3, label: "My Results" },
 ];
 
