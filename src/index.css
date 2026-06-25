@@ -1,16 +1,24 @@
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Inter", sans-serif;
-  @apply bg-slate-100 text-slate-900 antialiased;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -18,5 +26,6 @@ h4 {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 rounded-full;
+  background: #cbd5e1;
+  border-radius: 99px;
 }

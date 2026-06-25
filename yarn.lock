@@ -397,7 +397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reduxjs/toolkit@npm:^1.9.0 || 2.x.x":
+"@reduxjs/toolkit@npm:^1.9.0 || 2.x.x, @reduxjs/toolkit@npm:^2.12.0":
   version: 2.12.0
   resolution: "@reduxjs/toolkit@npm:2.12.0"
   dependencies:
@@ -2258,7 +2258,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-redux@npm:8.x.x || 9.x.x":
+"react-is@npm:^19.2.7":
+  version: 19.2.7
+  resolution: "react-is@npm:19.2.7"
+  checksum: 10c0/419fe54d5bd7fdf5414a5bb7bd9a1e0e36f9fae28ffb4cb73290fbe342bde15d8584a90d1db62547f6aa03018dce517b178a041abb522136cd4b4b51b4e94c83
+  languageName: node
+  linkType: hard
+
+"react-redux@npm:8.x.x || 9.x.x, react-redux@npm:^9.3.0":
   version: 9.3.0
   resolution: "react-redux@npm:9.3.0"
   dependencies:
@@ -2485,6 +2492,7 @@ __metadata:
   resolution: "student-portal@workspace:."
   dependencies:
     "@eslint/js": "npm:^10.0.1"
+    "@reduxjs/toolkit": "npm:^2.12.0"
     "@tailwindcss/vite": "npm:^4.3.1"
     "@types/react": "npm:^19.2.17"
     "@types/react-dom": "npm:^19.2.3"
@@ -2499,6 +2507,8 @@ __metadata:
     react-dom: "npm:^19.2.7"
     react-hook-form: "npm:^7.80.0"
     react-hot-toast: "npm:^2.6.0"
+    react-is: "npm:^19.2.7"
+    react-redux: "npm:^9.3.0"
     react-router-dom: "npm:^7.18.0"
     recharts: "npm:^3.9.0"
     tailwindcss: "npm:^4.3.1"
