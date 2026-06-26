@@ -12,7 +12,7 @@ Make sure these are installed before you begin:
 
 | Tool                                                     | Version               |
 | -------------------------------------------------------- | --------------------- |
-| [Visual Studio 2022](https://visualstudio.microsoft.com) | 17.x+                 |
+| [Visual Studio 2026](https://visualstudio.microsoft.com) | 17.x+                 |
 | [.NET SDK](https://dotnet.microsoft.com/download)        | 9 or 10               |
 | [SQL Server](https://www.microsoft.com/en-us/sql-server) | 2019+                 |
 | [SSMS](https://aka.ms/ssmsfullsetup)                     | 19+                   |
@@ -59,7 +59,7 @@ git clone https://github.com/arefin008/student-management-portal.git
 
 1. Open **SSMS** and connect to your SQL Server
 2. Click **New Query**
-3. Open and paste the contents of `StudentPortalDB.sql` (repo root)
+3. Open and paste the contents of `script.sql` (repo root)
 4. Press **F5** to execute
 5. Confirm `StudentPortalDB` appears in Object Explorer
 
@@ -101,10 +101,10 @@ Run the project (`F5`) → copy both hashes from the console, then run this in S
 USE StudentPortalDB;
 
 UPDATE Users SET PasswordHash = 'PASTE_ADMIN_HASH_HERE'
-WHERE Username = 'admin@portal.com';
+WHERE Username = 'admin';
 
 INSERT INTO Users (Username, PasswordHash, Role)
-VALUES ('student@test.com', 'PASTE_STUDENT_HASH_HERE', 'Student');
+VALUES ('student', 'PASTE_STUDENT_HASH_HERE', 'Student');
 ```
 
 **Remove** the `Console.WriteLine` lines after you're done.
